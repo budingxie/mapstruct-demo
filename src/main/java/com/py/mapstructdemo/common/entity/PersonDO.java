@@ -3,6 +3,7 @@ package com.py.mapstructdemo.common.entity;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * @author pengyou@xiaomi.com
@@ -18,5 +19,7 @@ public class PersonDO implements Serializable {
     private Integer age;
 
     private String phone;
+
+    private Date date;
 
 }

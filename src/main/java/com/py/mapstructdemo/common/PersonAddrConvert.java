@@ -23,7 +23,8 @@ public interface PersonAddrConvert {
      */
     @Mappings({
             @Mapping(source = "personDO.name", target = "personName"),
-            @Mapping(source = "addressDO.address", target = "addr")
+            @Mapping(source = "addressDO.address", target = "addr"),
+            @Mapping(source = "personDO.date", target = "date", dateFormat = "yyyy-MM-dd HH:mm:ss")
     })
     PersonAddrDTO map2Dto(PersonDO personDO, AddressDO addressDO);
 

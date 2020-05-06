@@ -20,4 +20,6 @@ public class PersonAddrDTO implements Serializable {
 
     private String addr;
 
+    private String date;
+
 }

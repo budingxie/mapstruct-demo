@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.annotation.Resource;
+import java.util.Date;
 
 @SpringBootTest
 class MapstructDemoApplicationTests {
@@ -22,6 +23,7 @@ class MapstructDemoApplicationTests {
         person.setName("Yezhiwei");
         person.setAge(18);
         person.setPhone("150");
+        person.setDate(new Date());
         // 从数据库中address表中查询到的数据
         AddressDO address = new AddressDO();
         address.setAddress("BeiJing");
